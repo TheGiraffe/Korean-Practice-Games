@@ -1,0 +1,227 @@
+[gd_scene format=3 uid="uid://b3aw6q87h0oe7"]
+
+[ext_resource type="PackedScene" uid="uid://dek6yrrmffc5x" path="res://CAD/Beginner Verbs/English/buy.glb" id="1_ggdel"]
+[ext_resource type="Script" uid="uid://ucr4wxs5looo" path="res://english_block.gd" id="1_hfxa6"]
+[ext_resource type="PackedScene" uid="uid://c4on2tkbc51jw" path="res://CAD/Beginner Verbs/English/clean.glb" id="2_hfxa6"]
+[ext_resource type="PackedScene" uid="uid://k8lbi1yosr6t" path="res://CAD/Beginner Verbs/English/cook.glb" id="3_dxq6b"]
+[ext_resource type="PackedScene" uid="uid://mhc3vwrvewdn" path="res://CAD/Beginner Verbs/English/cry.glb" id="4_1wweb"]
+[ext_resource type="PackedScene" uid="uid://gl6u7e1ft3x7" path="res://CAD/Beginner Verbs/English/deposit_money.glb" id="5_tqicu"]
+[ext_resource type="PackedScene" uid="uid://ddjwhoojsfc5h" path="res://CAD/Beginner Verbs/English/drink.glb" id="6_5tobq"]
+[ext_resource type="PackedScene" uid="uid://dnee1hqgcp8g1" path="res://CAD/Beginner Verbs/English/drive.glb" id="7_2u4sl"]
+[ext_resource type="PackedScene" uid="uid://h0lj1g0hk6ly" path="res://CAD/Beginner Verbs/English/eat.glb" id="8_n6eei"]
+[ext_resource type="PackedScene" uid="uid://dh3y7qkec2ouy" path="res://CAD/Beginner Verbs/English/exercise.glb" id="9_soo6i"]
+[ext_resource type="PackedScene" uid="uid://ck370av56oc4y" path="res://CAD/Beginner Verbs/English/get_up.glb" id="10_mg04i"]
+[ext_resource type="PackedScene" uid="uid://dwm7xyf2rnifj" path="res://CAD/Beginner Verbs/English/go_on_trip.glb" id="11_dhay3"]
+[ext_resource type="PackedScene" uid="uid://bvt172nr0smpu" path="res://CAD/Beginner Verbs/English/hear.glb" id="12_yr1tt"]
+[ext_resource type="PackedScene" uid="uid://cte6j4myvioyv" path="res://CAD/Beginner Verbs/English/look_for.glb" id="13_4lnkd"]
+[ext_resource type="PackedScene" uid="uid://el6whn45a4aq" path="res://CAD/Beginner Verbs/English/read.glb" id="14_qh2rr"]
+[ext_resource type="PackedScene" uid="uid://tlhceesiwu3e" path="res://CAD/Beginner Verbs/English/rest.glb" id="15_plcs8"]
+[ext_resource type="PackedScene" uid="uid://b6ybcjy6v3c0b" path="res://CAD/Beginner Verbs/English/say.glb" id="16_jpm4q"]
+[ext_resource type="PackedScene" uid="uid://bnyquyb6k00h5" path="res://CAD/Beginner Verbs/English/see.glb" id="17_7g6dr"]
+[ext_resource type="PackedScene" uid="uid://d14lke17j03q0" path="res://CAD/Beginner Verbs/English/sell.glb" id="18_pc105"]
+[ext_resource type="PackedScene" uid="uid://dcw2kujw2cnjo" path="res://CAD/Beginner Verbs/English/shop.glb" id="19_hv5g8"]
+[ext_resource type="PackedScene" uid="uid://bftwweldjf004" path="res://CAD/Beginner Verbs/English/sleep.glb" id="20_wofvc"]
+[ext_resource type="PackedScene" uid="uid://b424ojopkh1a" path="res://CAD/Beginner Verbs/English/smile.glb" id="21_tnt5c"]
+[ext_resource type="PackedScene" uid="uid://cjwsub3gwhyhf" path="res://CAD/Beginner Verbs/English/study.glb" id="22_epoaq"]
+[ext_resource type="PackedScene" uid="uid://v5flugwkoa0l" path="res://CAD/Beginner Verbs/English/travel.glb" id="23_nofa6"]
+[ext_resource type="PackedScene" uid="uid://comfbevyixtmn" path="res://CAD/Beginner Verbs/English/withdraw_money.glb" id="24_be3oe"]
+[ext_resource type="PackedScene" uid="uid://biayy765dvjcj" path="res://CAD/Beginner Verbs/English/work.glb" id="25_cwmmy"]
+[ext_resource type="PackedScene" uid="uid://bfkugrc06583x" path="res://CAD/Beginner Verbs/English/write.glb" id="26_k8mu0"]
+[ext_resource type="PackedScene" uid="uid://b8k3022b6wfv2" path="res://CAD/reward.glb" id="28_dxq6b"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wwm6l"]
+size = Vector3(5.0219116, 2.0042024, 2.0100946)
+
+[sub_resource type="Animation" id="Animation_dxq6b"]
+resource_name = "FloatingBlocks"
+length = 1.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.03333334, 0, 0.5, 1, 1.4666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 0.5, 1.0, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.25, 0.75, 1.25),
+"transitions": PackedFloat32Array(0.3298769, 0.3298769, 0.7578583, 2.6390152),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-0.06981317, -0.05235988, 0.108210415), Vector3(0.038397245, 0.055850536, -0.108210415), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_tqicu"]
+resource_name = "FloatingLanterns"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 1),
+"transitions": PackedFloat32Array(0.2030631, 0.5743491, 3.7321315),
+"update": 0,
+"values": [0.0, 0.75, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_1wweb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:position:y")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_1wweb"]
+_data = {
+&"FloatingBlocks": SubResource("Animation_dxq6b"),
+&"FloatingLanterns": SubResource("Animation_tqicu"),
+&"RESET": SubResource("Animation_1wweb")
+}
+
+[node name="EnglishBlock" type="CharacterBody3D" unique_id=249592072 groups=["EnglishBlock"]]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_hfxa6")
+
+[node name="Pivot" type="Node3D" parent="." unique_id=1406400420]
+
+[node name="buy" parent="Pivot" unique_id=963011057 instance=ExtResource("1_ggdel")]
+visible = false
+
+[node name="clean" parent="Pivot" unique_id=478735481 instance=ExtResource("2_hfxa6")]
+visible = false
+
+[node name="cook" parent="Pivot" unique_id=173695202 instance=ExtResource("3_dxq6b")]
+visible = false
+
+[node name="cry" parent="Pivot" unique_id=1539421812 instance=ExtResource("4_1wweb")]
+visible = false
+
+[node name="deposit_money" parent="Pivot" unique_id=25469199 instance=ExtResource("5_tqicu")]
+visible = false
+
+[node name="drink" parent="Pivot" unique_id=40128790 instance=ExtResource("6_5tobq")]
+visible = false
+
+[node name="drive" parent="Pivot" unique_id=2000589070 instance=ExtResource("7_2u4sl")]
+visible = false
+
+[node name="eat" parent="Pivot" unique_id=467969585 instance=ExtResource("8_n6eei")]
+visible = false
+
+[node name="exercise" parent="Pivot" unique_id=2063905648 instance=ExtResource("9_soo6i")]
+visible = false
+
+[node name="get_up" parent="Pivot" unique_id=1596726172 instance=ExtResource("10_mg04i")]
+visible = false
+
+[node name="go_on_trip" parent="Pivot" unique_id=153620843 instance=ExtResource("11_dhay3")]
+visible = false
+
+[node name="hear" parent="Pivot" unique_id=947298857 instance=ExtResource("12_yr1tt")]
+visible = false
+
+[node name="look_for" parent="Pivot" unique_id=1414692666 instance=ExtResource("13_4lnkd")]
+visible = false
+
+[node name="read" parent="Pivot" unique_id=278234791 instance=ExtResource("14_qh2rr")]
+visible = false
+
+[node name="rest" parent="Pivot" unique_id=1975466650 instance=ExtResource("15_plcs8")]
+visible = false
+
+[node name="say" parent="Pivot" unique_id=804147931 instance=ExtResource("16_jpm4q")]
+visible = false
+
+[node name="see" parent="Pivot" unique_id=7211686 instance=ExtResource("17_7g6dr")]
+visible = false
+
+[node name="sell" parent="Pivot" unique_id=212326270 instance=ExtResource("18_pc105")]
+visible = false
+
+[node name="shop" parent="Pivot" unique_id=264007391 instance=ExtResource("19_hv5g8")]
+visible = false
+
+[node name="sleep" parent="Pivot" unique_id=1941478756 instance=ExtResource("20_wofvc")]
+visible = false
+
+[node name="smile" parent="Pivot" unique_id=1175560359 instance=ExtResource("21_tnt5c")]
+visible = false
+
+[node name="study" parent="Pivot" unique_id=158612869 instance=ExtResource("22_epoaq")]
+visible = false
+
+[node name="travel" parent="Pivot" unique_id=1960934802 instance=ExtResource("23_nofa6")]
+visible = false
+
+[node name="withdraw_money" parent="Pivot" unique_id=1176156507 instance=ExtResource("24_be3oe")]
+visible = false
+
+[node name="work" parent="Pivot" unique_id=1237580632 instance=ExtResource("25_cwmmy")]
+visible = false
+
+[node name="write" parent="Pivot" unique_id=1100238761 instance=ExtResource("26_k8mu0")]
+visible = false
+
+[node name="reward" parent="Pivot" unique_id=1992928783 instance=ExtResource("28_dxq6b")]
+transform = Transform3D(0.5, 0, 0, 0, -2.1855694e-08, -0.5, 0, 0.5, -2.1855694e-08, 0, 2, 0)
+visible = false
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Pivot/reward" unique_id=1145188262]
+transform = Transform3D(2, 0, 0, 0, -8.742278e-08, 2, 0, -2, -8.742278e-08, 0, 2.621909, -1.6479187)
+light_color = Color(1, 0.73333335, 0, 1)
+light_energy = 5.0
+shadow_enabled = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=416645039]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.003, 1.0083449, 0)
+shape = SubResource("BoxShape3D_wwm6l")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1131474346]
+libraries/ = SubResource("AnimationLibrary_1wweb")
+autoplay = &"FloatingBlocks"

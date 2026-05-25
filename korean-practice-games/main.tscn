@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://j55qe7g4sovj"]
+
+[ext_resource type="Script" uid="uid://d1wtq2ju8nyyu" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://byj870qm6d087" path="res://korean_block.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://b3aw6q87h0oe7" path="res://english_block.tscn" id="2_0xm2m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2yge"]
+bg_color = Color(0.14400001, 0.6, 0.524, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
+size = Vector3(80, 2, 60)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7dm0k"]
+size = Vector3(80, 2, 60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7dm0k"]
+albedo_color = Color(0.16099998, 0.33110002, 0.35, 1)
+
+[node name="Main" type="Node" unique_id=2050479785]
+script = ExtResource("1_h2yge")
+english_blocks_scene = ExtResource("2_0xm2m")
+
+[node name="UserInterface" type="Control" parent="." unique_id=274735296]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="UserInterface" unique_id=32591055]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.01, 0.01, 0.01, 0.2627451)
+
+[node name="ScoreLabel" type="Label" parent="UserInterface" unique_id=855947942]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_top = -96.0
+offset_right = 198.0
+offset_bottom = -27.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Score: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContinueLabel" type="Label" parent="UserInterface" unique_id=1402546198]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -481.5
+offset_top = -323.5
+offset_right = 481.5
+offset_bottom = -8.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+text = "Congrats! Challenge 1 is complete!
+
+Continue Playing?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Yes" type="Button" parent="UserInterface" unique_id=925297450]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -510.0
+offset_top = 139.0
+offset_right = -235.0
+offset_bottom = 253.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
+text = "Yes"
+
+[node name="No" type="Button" parent="UserInterface" unique_id=1042972782]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 156.0
+offset_top = 142.0
+offset_right = 431.0
+offset_bottom = 256.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 75
+theme_override_styles/normal = SubResource("StyleBoxFlat_h2yge")
+text = "No
+"
+
+[node name="Ground" type="StaticBody3D" parent="." unique_id=1376421449]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=172530664]
+shape = SubResource("BoxShape3D_7dm0k")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground" unique_id=1414930060]
+mesh = SubResource("BoxMesh_7dm0k")
+surface_material_override/0 = SubResource("StandardMaterial3D_7dm0k")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=913038961]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 5, 0)
+light_energy = 5.0
+shadow_enabled = true
+
+[node name="KoreanBlock" parent="." unique_id=1144457560 instance=ExtResource("1_ig7tw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+collision_mask = 6
+current_word = "clean"
+
+[node name="EnglishBlock" parent="." unique_id=249592072 instance=ExtResource("2_0xm2m")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CameraPivot" type="Marker3D" parent="." unique_id=597841652]
+transform = Transform3D(1, 0, 0, 0, 0.49999997, 0.86602545, 0, -0.86602545, 0.49999997, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=387557529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 16)
+
+[connection signal="pressed" from="UserInterface/Yes" to="." method="_on_yes_pressed"]
+[connection signal="correct_answer" from="EnglishBlock" to="." method="_on_english_block_correct_answer"]

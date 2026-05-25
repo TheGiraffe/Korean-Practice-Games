@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://byj870qm6d087"]
+
+[ext_resource type="Script" uid="uid://wtacsomb2vp8" path="res://korean_block.gd" id="1_hwltx"]
+[ext_resource type="PackedScene" uid="uid://t4mv4shuyguo" path="res://CAD/Beginner Verbs/Korean/buy.glb" id="1_rus4r"]
+[ext_resource type="PackedScene" uid="uid://b7l1dlbffosec" path="res://CAD/Beginner Verbs/Korean/clean.glb" id="3_m6ij4"]
+[ext_resource type="PackedScene" uid="uid://tn2m6usxj1sw" path="res://CAD/Beginner Verbs/Korean/cook.glb" id="4_5lh8e"]
+[ext_resource type="PackedScene" uid="uid://ckelsgg01g2xi" path="res://CAD/Beginner Verbs/Korean/cry.glb" id="5_71fo5"]
+[ext_resource type="PackedScene" uid="uid://d3v43t8q7b7bl" path="res://CAD/Beginner Verbs/Korean/deposit_money.glb" id="6_nt2lt"]
+[ext_resource type="PackedScene" uid="uid://bwkh4qrxpunlm" path="res://CAD/Beginner Verbs/Korean/drink.glb" id="7_g6jmj"]
+[ext_resource type="PackedScene" uid="uid://jcq0dfjt10px" path="res://CAD/Beginner Verbs/Korean/drive.glb" id="8_yuyle"]
+[ext_resource type="PackedScene" uid="uid://ctypucil7y1b7" path="res://CAD/Beginner Verbs/Korean/eat.glb" id="9_1pd06"]
+[ext_resource type="PackedScene" uid="uid://c7qqy752igqhm" path="res://CAD/Beginner Verbs/Korean/exercise.glb" id="10_vhu4r"]
+[ext_resource type="PackedScene" uid="uid://lf8bhywqc2ff" path="res://CAD/Beginner Verbs/Korean/get_up.glb" id="11_m5v00"]
+[ext_resource type="PackedScene" uid="uid://umdwtjvtlbum" path="res://CAD/Beginner Verbs/Korean/go_on_trip.glb" id="12_ocebb"]
+[ext_resource type="PackedScene" uid="uid://v0dymqviwegu" path="res://CAD/Beginner Verbs/Korean/hear.glb" id="13_t1um1"]
+[ext_resource type="PackedScene" uid="uid://cfa6mrshpy731" path="res://CAD/Beginner Verbs/Korean/look_for.glb" id="14_j5kqi"]
+[ext_resource type="PackedScene" uid="uid://n8rotukqetw8" path="res://CAD/Beginner Verbs/Korean/read.glb" id="15_3ekya"]
+[ext_resource type="PackedScene" uid="uid://20xq6nfx8h8j" path="res://CAD/Beginner Verbs/Korean/rest.glb" id="16_adsda"]
+[ext_resource type="PackedScene" uid="uid://b70g17oct2kwg" path="res://CAD/Beginner Verbs/Korean/say.glb" id="17_wgjey"]
+[ext_resource type="PackedScene" uid="uid://ciy0fcwvfufl5" path="res://CAD/Beginner Verbs/Korean/see.glb" id="18_67rn4"]
+[ext_resource type="PackedScene" uid="uid://dlmgudj0u88x6" path="res://CAD/Beginner Verbs/Korean/sell.glb" id="19_c2ow7"]
+[ext_resource type="PackedScene" uid="uid://b8yqqfo2d1pnt" path="res://CAD/Beginner Verbs/Korean/shop.glb" id="20_euf2p"]
+[ext_resource type="PackedScene" uid="uid://cjixfig45gs71" path="res://CAD/Beginner Verbs/Korean/sleep.glb" id="21_bo3u3"]
+[ext_resource type="PackedScene" uid="uid://qqwnoivmnpd4" path="res://CAD/Beginner Verbs/Korean/smile.glb" id="22_qxnla"]
+[ext_resource type="PackedScene" uid="uid://0ocavxgjlqcq" path="res://CAD/Beginner Verbs/Korean/study.glb" id="23_12g7s"]
+[ext_resource type="PackedScene" uid="uid://ufogij8kbbl" path="res://CAD/Beginner Verbs/Korean/travel.glb" id="24_jksct"]
+[ext_resource type="PackedScene" uid="uid://buwii2wppo73m" path="res://CAD/Beginner Verbs/Korean/withdraw_money.glb" id="25_l86g4"]
+[ext_resource type="PackedScene" uid="uid://5ubt03ekrq6" path="res://CAD/Beginner Verbs/Korean/work.glb" id="26_yiyuf"]
+[ext_resource type="PackedScene" uid="uid://c1td4o0b6u1uw" path="res://CAD/Beginner Verbs/Korean/write.glb" id="27_847e4"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m6ij4"]
+size = Vector3(5.0219116, 2.0101814, 2.0100946)
+
+[node name="KoreanBlock" type="CharacterBody3D" unique_id=1144457560]
+script = ExtResource("1_hwltx")
+
+[node name="Pivot" type="Node3D" parent="." unique_id=1207960095]
+
+[node name="buy" parent="Pivot" unique_id=1713610396 instance=ExtResource("1_rus4r")]
+visible = false
+
+[node name="clean" parent="Pivot" unique_id=1892131501 instance=ExtResource("3_m6ij4")]
+visible = false
+
+[node name="cook" parent="Pivot" unique_id=45814776 instance=ExtResource("4_5lh8e")]
+visible = false
+
+[node name="cry" parent="Pivot" unique_id=1412282098 instance=ExtResource("5_71fo5")]
+visible = false
+
+[node name="deposit_money" parent="Pivot" unique_id=1809318050 instance=ExtResource("6_nt2lt")]
+visible = false
+
+[node name="drink" parent="Pivot" unique_id=554543682 instance=ExtResource("7_g6jmj")]
+visible = false
+
+[node name="drive" parent="Pivot" unique_id=1231497091 instance=ExtResource("8_yuyle")]
+visible = false
+
+[node name="eat" parent="Pivot" unique_id=1948824429 instance=ExtResource("9_1pd06")]
+visible = false
+
+[node name="exercise" parent="Pivot" unique_id=572245826 instance=ExtResource("10_vhu4r")]
+visible = false
+
+[node name="get_up" parent="Pivot" unique_id=2104936516 instance=ExtResource("11_m5v00")]
+visible = false
+
+[node name="go_on_trip" parent="Pivot" unique_id=1013383462 instance=ExtResource("12_ocebb")]
+visible = false
+
+[node name="hear" parent="Pivot" unique_id=33032956 instance=ExtResource("13_t1um1")]
+visible = false
+
+[node name="look_for" parent="Pivot" unique_id=189810249 instance=ExtResource("14_j5kqi")]
+visible = false
+
+[node name="read" parent="Pivot" unique_id=544528151 instance=ExtResource("15_3ekya")]
+visible = false
+
+[node name="rest" parent="Pivot" unique_id=1436709817 instance=ExtResource("16_adsda")]
+visible = false
+
+[node name="say" parent="Pivot" unique_id=1681317388 instance=ExtResource("17_wgjey")]
+visible = false
+
+[node name="see" parent="Pivot" unique_id=1714714088 instance=ExtResource("18_67rn4")]
+visible = false
+
+[node name="sell" parent="Pivot" unique_id=2021920644 instance=ExtResource("19_c2ow7")]
+visible = false
+
+[node name="shop" parent="Pivot" unique_id=2097308477 instance=ExtResource("20_euf2p")]
+visible = false
+
+[node name="sleep" parent="Pivot" unique_id=858132515 instance=ExtResource("21_bo3u3")]
+visible = false
+
+[node name="smile" parent="Pivot" unique_id=87272043 instance=ExtResource("22_qxnla")]
+visible = false
+
+[node name="study" parent="Pivot" unique_id=51311346 instance=ExtResource("23_12g7s")]
+visible = false
+
+[node name="travel" parent="Pivot" unique_id=1054453870 instance=ExtResource("24_jksct")]
+visible = false
+
+[node name="withdraw_money" parent="Pivot" unique_id=1799962420 instance=ExtResource("25_l86g4")]
+visible = false
+
+[node name="work" parent="Pivot" unique_id=343211164 instance=ExtResource("26_yiyuf")]
+visible = false
+
+[node name="write" parent="Pivot" unique_id=750177169 instance=ExtResource("27_847e4")]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=583442008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002532959, 1.0030537, 0.00061655045)
+shape = SubResource("BoxShape3D_m6ij4")
