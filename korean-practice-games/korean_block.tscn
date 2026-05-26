@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://d3v43t8q7b7bl" path="res://CAD/Beginner Verbs/Korean/deposit_money.glb" id="6_nt2lt"]
 [ext_resource type="PackedScene" uid="uid://bwkh4qrxpunlm" path="res://CAD/Beginner Verbs/Korean/drink.glb" id="7_g6jmj"]
 [ext_resource type="PackedScene" uid="uid://jcq0dfjt10px" path="res://CAD/Beginner Verbs/Korean/drive.glb" id="8_yuyle"]
-[ext_resource type="PackedScene" uid="uid://ctypucil7y1b7" path="res://CAD/Beginner Verbs/Korean/eat.glb" id="9_1pd06"]
 [ext_resource type="PackedScene" uid="uid://c7qqy752igqhm" path="res://CAD/Beginner Verbs/Korean/exercise.glb" id="10_vhu4r"]
 [ext_resource type="PackedScene" uid="uid://lf8bhywqc2ff" path="res://CAD/Beginner Verbs/Korean/get_up.glb" id="11_m5v00"]
 [ext_resource type="PackedScene" uid="uid://umdwtjvtlbum" path="res://CAD/Beginner Verbs/Korean/go_on_trip.glb" id="12_ocebb"]
@@ -27,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://buwii2wppo73m" path="res://CAD/Beginner Verbs/Korean/withdraw_money.glb" id="25_l86g4"]
 [ext_resource type="PackedScene" uid="uid://5ubt03ekrq6" path="res://CAD/Beginner Verbs/Korean/work.glb" id="26_yiyuf"]
 [ext_resource type="PackedScene" uid="uid://c1td4o0b6u1uw" path="res://CAD/Beginner Verbs/Korean/write.glb" id="27_847e4"]
+[ext_resource type="PackedScene" uid="uid://ou2ugfet88va" path="res://CAD/Beginner Verbs/BetterVersion/Korean/eat.glb" id="28_5lh8e"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_m6ij4"]
 size = Vector3(5.0219116, 2.0101814, 2.0100946)
@@ -55,9 +55,6 @@ visible = false
 visible = false
 
 [node name="drive" parent="Pivot" unique_id=1231497091 instance=ExtResource("8_yuyle")]
-visible = false
-
-[node name="eat" parent="Pivot" unique_id=1948824429 instance=ExtResource("9_1pd06")]
 visible = false
 
 [node name="exercise" parent="Pivot" unique_id=572245826 instance=ExtResource("10_vhu4r")]
@@ -113,6 +110,8 @@ visible = false
 
 [node name="write" parent="Pivot" unique_id=750177169 instance=ExtResource("27_847e4")]
 visible = false
+
+[node name="eat" parent="Pivot" unique_id=270662678 instance=ExtResource("28_5lh8e")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=583442008]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.002532959, 1.0030537, 0.00061655045)
